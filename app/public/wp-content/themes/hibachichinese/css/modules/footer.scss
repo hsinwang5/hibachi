@@ -1,0 +1,67 @@
+.footer {
+  background: #820042;
+  padding-bottom: 15px;
+  background-size: cover;
+}
+.footer__links {
+  text-align: center;
+  color: white;
+  padding-top: 1px;
+}
+.footer__links li {
+  margin-top: 15px;
+  list-style-type: none;
+}
+.footer__links a {
+  color: white;
+}
+.contact-us {
+  margin: 15px auto;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+.contact-us__number {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+.footer img {
+  width: 100%;
+  // transform: scale(1.25);
+}
+.footer p {
+  text-align: center;
+  color: white;
+  padding-bottom: 10px;
+  font-size: 0.5rem;
+}
+
+@include mobile-cutoff() {
+  .footer {
+    font-size: 1.25rem;
+  }
+}
+
+@include laptop-cutoff() {
+  .footer {
+    font-size: 1.75rem;
+  }
+  .footer__links {
+    padding-top: 20px;
+  }
+  .footer img {
+    display: block;
+    margin: auto;
+    width: 75%;
+  }
+}
+
+@include highdef-cutoff() {
+  .footer {
+    font-size: 2rem;
+  }
+  .footer img {
+    width: 65%;
+  }
+}

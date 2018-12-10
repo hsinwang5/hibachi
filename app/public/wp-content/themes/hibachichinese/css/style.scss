@@ -1,0 +1,71 @@
+/* 
+ Theme Name: Hibachi Chinese
+ Author: Hsin
+ Version: 1.0
+ Description: Hibachi Chinese Japanese
+*/
+
+// font-family: 'Black Han Sans', sans-serif;
+// font-family: 'Pacifico', cursive;
+// font-family: 'Bungee Shade', cursive;
+// font-family: 'Black Ops One', cursive;
+// font-family: 'Rubik', sans-serif;
+
+$tablet: 48rem; //768x1024 portrait ipads
+$laptop: 80rem; //1280x720 standard HD
+$highdef: 120rem; //1920x1080 high def +
+
+@mixin mobile-cutoff {
+  @media only screen and (min-width: $tablet) {
+    @content;
+  }
+}
+@mixin laptop-cutoff {
+  @media only screen and (min-width: $laptop) {
+    @content;
+  }
+}
+@mixin highdef-cutoff {
+  @media only screen and (min-width: $highdef) {
+    @content;
+  }
+}
+@mixin user-select {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+}
+
+@import "modules/normalize";
+@import "modules/header";
+@import "modules/frontpage.scss";
+@import "modules/lunch-menu.scss";
+@import "modules/dinner-menu.scss";
+@import "modules/footer.scss";

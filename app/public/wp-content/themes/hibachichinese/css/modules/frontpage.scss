@@ -1,0 +1,340 @@
+.hero-menu {
+  width: 100%;
+  height: 540px;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #b9025f;
+}
+.desktop-image {
+  display: none;
+}
+.mobile-image {
+  width: 102%;
+  // border: 1px solid blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hero-menu__title {
+  width: 100%;
+  max-width: 350px;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+}
+.hero-menu__title img {
+  width: 100%;
+  transform: scale(1.5);
+}
+.button-container {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 75%;
+  max-width: 350px;
+  height: 50%;
+}
+.button {
+  width: 75%;
+  height: 50px;
+  line-height: 50px;
+  margin: 25px auto;
+  border-radius: 5px;
+  text-align: center;
+  background: #e1a102;
+}
+.order-options {
+  height: auto;
+  color: #e1a102;
+  background: #ededed;
+  border: 1px solid #ededed;
+}
+.order-options a {
+  color: #e1a102;
+}
+.order-options h3 {
+  margin-top: 15px;
+}
+.button--jumbo {
+  border-radius: 1px;
+  background: url("https://i.imgur.com/tMFMo3t.jpg");
+}
+.featured-dish {
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+  position: relative;
+}
+.mobile-image__small {
+  position: static;
+}
+.featured-dish__textbox {
+  font-family: "Black Ops One", cursive;
+  color: purple;
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 190px;
+  height: 100%;
+  z-index: 1;
+}
+.featured-dish__logo {
+  // position: absolute;
+  // top: 0;
+  // left: -25px;
+  width: 250px;
+  height: 150px;
+  transform: rotate(20deg) translate(-30px, 2vw);
+}
+.textbox1 {
+  text-align: center;
+  width: 50%;
+  margin-left: 15px;
+  // margin: auto;
+  transform: translate(1px, -65px);
+}
+.textbox2 {
+  text-align: center;
+  width: 50%;
+  margin-left: 15px;
+  transform: translate(10px, -60px);
+}
+.featured-dish__screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 175px;
+  height: 100%;
+  background: black;
+  opacity: 0.3;
+}
+.special-offers {
+  background: #ededed;
+  color: black;
+  width: 100%;
+  height: 300px;
+  padding: 0 5px 0 5px;
+}
+.special-offers__container {
+  width: 100%;
+  height: 70%;
+}
+.special-offers h3 {
+  padding-top: 15px;
+  opacity: 0.75;
+}
+.special-offers__offer {
+  width: 80%;
+  margin: 35px auto;
+  text-align: center;
+  height: 35%;
+  background-size: cover;
+  position: relative;
+}
+.special-offers__text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px 10px 10px 10px;
+  z-index: 10;
+  color: #ededed;
+  color: #b9025f;
+  color: black;
+}
+.special-offers__screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0.15;
+  z-index: 1;
+}
+
+@include mobile-cutoff() {
+  .hero-menu {
+    height: 750px;
+    font-size: 1.2rem;
+  }
+  .hero-menu__title img {
+    transform: scale(2.25);
+  }
+  .button-container {
+    top: 35%;
+  }
+  .button--main {
+    width: 90%;
+    height: 60px;
+    line-height: 60px;
+    margin: 30px auto;
+  }
+  .order-options {
+    font-size: 1.2rem;
+  }
+  .featured-dish {
+    height: 400px;
+  }
+  .featured-dish .mobile-image {
+    display: none;
+  }
+  .featured-dish .desktop-image {
+    display: block;
+  }
+  .featured-dish__textbox {
+    top: 50px;
+    font-size: 2.5rem;
+    width: 225px;
+  }
+  .featured-dish__screen {
+    width: 225px;
+  }
+  .featured-dish__logo {
+    // position: absolute;
+    // top: 0;
+    // left: -25px;
+    width: 250px;
+    height: 150px;
+    transform: rotate(20deg) translate(-7.5px, 0);
+  }
+  .textbox1,
+  .textbox2 {
+    width: 80%;
+  }
+  .special-offers {
+    font-size: 1.2rem;
+    height: 350px;
+  }
+  .special-offers__container {
+    width: 100%;
+    height: 85%;
+  }
+  .special-offers__text {
+    padding: 30px 10px;
+  }
+}
+
+@include laptop-cutoff() {
+  .hero-menu {
+    height: 600px;
+    margin-top: 60px;
+    font-size: 1.4rem;
+  }
+  .hero-menu img {
+    transform: scale(1.05);
+  }
+  .hero-menu__title {
+    max-width: 350px;
+    top: 15%;
+    left: 52%;
+  }
+
+  .hero-menu__title img {
+    transform: scale(2.25);
+  }
+  .mobile-image {
+    display: none;
+  }
+  .desktop-image {
+    display: block;
+    width: 100%;
+  }
+  .home-container {
+    display: flex;
+  }
+  .order-options {
+    width: 50%;
+    font-size: 1.4rem;
+  }
+  .button--jumbo {
+    height: 70px;
+    line-height: 70px;
+    margin-top: 30px;
+  }
+  .featured-dish {
+    width: 50%;
+    height: 475px;
+  }
+  .featured-dish .desktop-image {
+    display: none;
+  }
+  .featured-dish .mobile-image {
+    display: block;
+  }
+  .special-offers {
+    font-size: 1.4rem;
+    height: 400px;
+  }
+  .special-offers h3 {
+    font-size: 1.8rem;
+  }
+  .special-offers__container {
+    display: flex;
+  }
+  .special-offers__offer {
+    width: 45%;
+    height: 80%;
+    font-size: 2rem;
+  }
+  .special-offers__text {
+    padding: 80px 10px;
+  }
+  .button-container {
+    top: 37%;
+    left: 52%;
+    width: 75%;
+    max-width: 450px;
+    height: 50%;
+  }
+  .button--main {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    margin: 35px auto;
+  }
+}
+
+@include highdef-cutoff() {
+  .hero-menu {
+    font-size: 2rem;
+  }
+  .order-options {
+    font-size: 2rem;
+  }
+  .featured-dish {
+    font-size: 2rem;
+    height: 485px;
+  }
+  .featured-dish .desktop-image {
+    display: block;
+    width: 110%;
+  }
+  .featured-dish .mobile-image {
+    display: none;
+  }
+  .special-offers {
+    font-size: 1.4rem;
+    height: 500px;
+  }
+  .special-offers h3 {
+    font-size: 2.4rem;
+  }
+  .special-offers__offer {
+    width: 45%;
+    height: 80%;
+    font-size: 2.1rem;
+  }
+  .special-offers__text {
+    padding: 120px 10px;
+  }
+}
