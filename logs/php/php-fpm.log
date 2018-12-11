@@ -114,3 +114,7 @@
 [09-Dec-2018 05:27:17] NOTICE: exiting, bye-bye!
 [10-Dec-2018 21:07:18] NOTICE: fpm is running, pid 40
 [10-Dec-2018 21:07:18] NOTICE: ready to handle connections
+[11-Dec-2018 05:32:15] NOTICE: Terminating ...
+[11-Dec-2018 05:32:15] NOTICE: exiting, bye-bye!
+[11-Dec-2018 06:37:58] NOTICE: fpm is running, pid 52
+[11-Dec-2018 06:37:58] NOTICE: ready to handle connections

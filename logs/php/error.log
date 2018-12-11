@@ -96,3 +96,4 @@ Stack trace:
 [28-Nov-2018 23:35:37 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /app/public/wp-includes/post-template.php on line 284
 [29-Nov-2018 00:04:19 UTC] PHP Warning:  trim() expects parameter 1 to be string, array given in /app/public/wp-includes/class-wp-meta-query.php on line 564
 [29-Nov-2018 08:21:48 UTC] PHP Warning:  Error while sending QUERY packet. PID=3997 in /app/public/wp-includes/wp-db.php on line 1924
+[11-Dec-2018 05:32:15 UTC] PHP Warning:  Error while sending QUERY packet. PID=24774 in /app/public/wp-includes/wp-db.php on line 1924
