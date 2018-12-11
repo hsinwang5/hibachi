@@ -29,9 +29,15 @@ if (file_exists(dirname(__FILE__) . '/local.php')) {
 	define('DB_HOST', 'localhost');
 } else {
 	//live db settings
-	define('DB_NAME', 'hsinchi0_hibachi');
-	define('DB_USER', 'hsinchi0_hsin');
-	define('DB_PASSWORD', 'tether19trac9j');
+	// define('DB_NAME', 'hsinchi0_hibachi');
+	// define('DB_USER', 'hsinchi0_hsin');
+	// define('DB_PASSWORD', 'tether19trac9j');
+	// /** MySQL hostname */
+	// define('DB_HOST', 'localhost');
+	//envirionment variables via siteground
+	define('DB_NAME', $_SERVER['DB_NAME']);
+	define('DB_USER', $_SERVER['DB_USER']);
+	define('DB_PASSWORD', $_SERVER['DB_PASSWORD']);
 	/** MySQL hostname */
 	define('DB_HOST', 'localhost');
 }
