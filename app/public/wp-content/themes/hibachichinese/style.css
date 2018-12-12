@@ -576,7 +576,7 @@ template {
 @media only screen and (min-width: 80rem) {
   .hero-menu {
     height: 600px;
-    margin-top: 60px;
+    margin-top: 30px;
     font-size: 1.4rem; }
   .hero-menu img {
     transform: scale(1.05); }
