@@ -62,7 +62,7 @@ $lunchSpecials = new WP_Query(array(
         <?php the_title() ?>
       </h4>
       <span class="menu-item__price">
-        <?php echo '$' . get_field('price'); ?>
+        <?php //echo '$' . get_field('price'); ?>
         <i class="fa fa-plus-square js-plus-hook" aria-hidden="true"></i>
         <i class="fa fa-minus-square js-minus-hook inactive" aria-hidden="true"></i>
       </span>

@@ -10,12 +10,18 @@
 
 <body <?php body_class(); //gives information about the page being viewed ?>>
   <div class="header-container">
-    <?php if (is_page('lunch-menu') or is_page('dinner-menu')) {
-      echo '<a href="' . site_url() . '"><div class="header-container__logo"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a></div>';
-    } else {
-      echo '<a href="' . site_url() . '"><div class="header-container__logo"><img src="https://i.imgur.com/CMiJdij.png" alt="knife logo"></a></div>';
-    } ?>
-    <div class="header-container__name">Hibachi</div>
+    <div class="close-menu inactive"><i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+    <a href="<?php echo site_url(); ?>">
+      <div class="header-container__logo"><img src="<?php echo get_theme_file_uri('images/HibachiLogo.png') ?>"
+          alt="Hibachi Logo"></div>
+    </a>
+    <!-- echo '<a href="' . site_url() . '"><div class="header-container__logo"><img src="https://i.imgur.com/CMiJdij.png" alt="knife logo"></a></div>'; -->
+
+    <div class="header-container__name">3230 Medlock Bridge Rd</div>
+  </div>
+
+  <div class="mobile-menu"><i class="fa fa-bars" aria-hidden="true"></i>
   </div>
 </body>
 

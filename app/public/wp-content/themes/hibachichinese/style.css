@@ -13,7 +13,12 @@
 
 html {
   box-sizing: border-box;
-  font-family: "Black Han Sans", sans-serif; }
+  font-family: "Black Han Sans", sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  background: #e6e1e5; }
 
 a {
   text-decoration: none;
@@ -25,6 +30,9 @@ h3,
 h4,
 h5 {
   text-align: center; }
+
+.inactive {
+  display: none; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -335,24 +343,37 @@ template {
   display: flex;
   width: 100vw;
   height: 50px;
-  font-family: "Pacifico", cursive;
-  font-size: 2rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
   line-height: 50px;
   position: fixed;
   top: 0;
   z-index: 100;
-  color: #b9025f;
+  color: black;
   background: #1e0629;
-  background: black; }
+  background: #cfc4c4; }
+
+.mobile-menu,
+.close-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  color: #828282;
+  font-size: 2.75rem;
+  cursor: pointer;
+  margin-right: 5px; }
+
+.close-menu {
+  color: black; }
 
 .header-container__logo {
-  flex: 0 1 auto;
-  width: 50px;
-  margin-left: 2%; }
+  width: 115px; }
 
 .header-container img {
   flex: 0 1 auto;
-  width: 50px; }
+  width: 100%;
+  margin-top: -14px; }
 
 .header-container i {
   line-height: 50px;
@@ -361,7 +382,14 @@ template {
 .header-container__name {
   margin-left: 2%; }
 
+.js-header-slide-down {
+  transform: none; }
+
 @media only screen and (min-width: 48rem) {
+  .mobile-menu,
+  .close-menu {
+    font-size: 3rem;
+    margin-left: 8px; }
   .header-container {
     height: 60px;
     line-height: 60px;
@@ -372,6 +400,31 @@ template {
   .header-container i {
     line-height: 60px; } }
 
+@media only screen and (min-width: 48rem) {
+  .header-container__logo {
+    width: 140px; }
+  .header-container img {
+    width: 100%; } }
+
+@media only screen and (min-width: 80rem) {
+  .mobile-menu,
+  .close-menu {
+    display: none; }
+  .header-container {
+    margin: auto;
+    margin-top: 10px;
+    left: 0;
+    right: 0;
+    transform: none;
+    height: 75px;
+    line-height: 75px;
+    width: 90%;
+    border-radius: 10px;
+    justify-content: space-between; }
+  .header-container img {
+    flex: 0 1 auto;
+    margin-top: -34px; } }
+
 .hero-menu {
   width: 100%;
   height: 540px;
@@ -379,7 +432,8 @@ template {
   top: 0;
   left: 0;
   overflow: hidden;
-  color: #b9025f; }
+  color: #b9025f;
+  color: #cfc4c4; }
 
 .desktop-image {
   display: none; }
@@ -397,8 +451,7 @@ template {
   top: 15%;
   left: 0;
   right: 0;
-  margin: auto;
-  overflow: hidden; }
+  margin: auto; }
 
 .hero-menu__title img {
   width: 100%;
@@ -421,12 +474,11 @@ template {
   margin: 25px auto;
   border-radius: 5px;
   text-align: center;
-  background: #e1a102; }
+  background: #960909; }
 
 .order-options {
   height: auto;
   color: #e1a102;
-  background: #ededed;
   border: 1px solid #ededed; }
 
 .order-options a {
@@ -450,7 +502,7 @@ template {
 
 .featured-dish__textbox {
   font-family: "Black Ops One", cursive;
-  color: purple;
+  color: black;
   font-size: 2rem;
   position: absolute;
   top: 0;
@@ -486,7 +538,6 @@ template {
   opacity: 0.3; }
 
 .special-offers {
-  background: #ededed;
   color: black;
   width: 100%;
   height: 300px;
@@ -514,7 +565,7 @@ template {
   width: 100%;
   top: 0;
   left: 0;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10px;
   z-index: 10;
   color: #ededed;
   color: #b9025f;
@@ -575,14 +626,13 @@ template {
 
 @media only screen and (min-width: 80rem) {
   .hero-menu {
-    height: 600px;
-    margin-top: 30px;
+    height: 750px;
     font-size: 1.4rem; }
   .hero-menu img {
     transform: scale(1.05); }
   .hero-menu__title {
     max-width: 350px;
-    top: 15%;
+    top: 20%;
     left: 52%; }
   .hero-menu__title img {
     transform: scale(2.25); }
@@ -669,19 +719,20 @@ template {
   font-family: "Rubik", sans-serif; }
 
 .menu-item {
-  border: 2px solid #dddcde;
   width: 90vw;
-  margin: 10px auto;
+  margin: 15px auto;
+  padding-top: 5px;
   font-size: 1.35rem;
   color: black;
-  background: #f4f2f5;
   border-radius: 5px;
   position: relative;
   transition: all 0.2s linear;
-  font-family: "Bad Script", cursive; }
+  font-family: "Bad Script", cursive;
+  cursor: pointer;
+  user-select: none; }
 
 .js-menu-item__change {
-  background: #f9fcde;
+  background: rgba(200, 200, 200, 0.25);
   transition: all 0.3s linear; }
 
 .menu-item__animation {
@@ -721,9 +772,6 @@ template {
   padding: 5px 15px;
   text-align: left; }
 
-.inactive {
-  display: none; }
-
 .js-expand-menu {
   max-height: 120px;
   transition: max-height 0.3s ease-out; }
@@ -742,10 +790,10 @@ template {
 @media only screen and (min-width: 80rem) {
   .menu-item {
     font-size: 2.6rem;
-    width: 70%; }
+    width: 60%; }
   .menu-item__heading {
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-between; }
   .menu-item__body {
     padding: 0 30px; }
   .js-expand-menu {
@@ -785,13 +833,13 @@ template {
   transition: transform 0.25s ease-out; }
 
 .dinner-menu__main--blue {
-  background: #022f4f; }
+  background: #2071c7; }
 
 .dinner-menu__main--maroon {
-  background: #61143b; }
+  background: #bf9a1f; }
 
 .dinner-menu__main--black {
-  background: #1a1817; }
+  background: #5c5957; }
 
 .dinner-menu__main--purple {
   background: #594c69; }
@@ -803,7 +851,7 @@ template {
   background: #6e4307; }
 
 .dinner-menu__main--pink {
-  background: #a10572; }
+  background: #a61ba6; }
 
 .dinner-menu__main--yellow {
   background: #b0aa09; }

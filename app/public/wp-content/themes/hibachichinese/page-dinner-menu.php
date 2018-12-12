@@ -53,7 +53,7 @@ $appetizer = new WP_Query(array(
           <?php the_title() ?>
         </h4>
         <span class="menu-item__price">
-          <?php echo '$' . get_field('price'); ?>
+          <?php  ?>
           <i class="fa fa-plus-square js-plus-hook" aria-hidden="true"></i>
           <i class="fa fa-minus-square js-minus-hook inactive" aria-hidden="true"></i>
         </span>
@@ -109,7 +109,7 @@ $soup = new WP_Query(array(
           <?php the_title() ?>
         </h4>
         <span class="menu-item__price">
-          <?php echo '$' . get_field('price'); ?>
+          <?php  ?>
           <i class="fa fa-plus-square js-plus-hook" aria-hidden="true"></i>
           <i class="fa fa-minus-square js-minus-hook inactive" aria-hidden="true"></i>
         </span>
@@ -165,7 +165,7 @@ $hibachi = new WP_Query(array(
           <?php the_title() ?>
         </h4>
         <span class="menu-item__price">
-          <?php echo '$' . get_field('price'); ?>
+          <?php  ?>
           <i class="fa fa-plus-square js-plus-hook" aria-hidden="true"></i>
           <i class="fa fa-minus-square js-minus-hook inactive" aria-hidden="true"></i>
         </span>
@@ -221,7 +221,7 @@ $specials = new WP_Query(array(
           <?php the_title() ?>
         </h4>
         <span class="menu-item__price">
-          <?php echo '$' . get_field('price'); ?>
+          <?php  ?>
           <i class="fa fa-plus-square js-plus-hook" aria-hidden="true"></i>
           <i class="fa fa-minus-square js-minus-hook inactive" aria-hidden="true"></i>
         </span>
@@ -277,7 +277,7 @@ $chickenDinner = new WP_Query(array(
           <?php the_title() ?>
         </h4>
         <span class="menu-item__price">
-          <?php echo '$' . get_field('price'); ?>
+          <?php  ?>
           <i class="fa fa-plus-square js-plus-hook" aria-hidden="true"></i>
           <i class="fa fa-minus-square js-minus-hook inactive" aria-hidden="true"></i>
         </span>
@@ -333,7 +333,7 @@ $beefDinner = new WP_Query(array(
           <?php the_title() ?>
         </h4>
         <span class="menu-item__price">
-          <?php echo '$' . get_field('price'); ?>
+          <?php  ?>
           <i class="fa fa-plus-square js-plus-hook" aria-hidden="true"></i>
           <i class="fa fa-minus-square js-minus-hook inactive" aria-hidden="true"></i>
         </span>
@@ -389,7 +389,7 @@ $seafood = new WP_Query(array(
           <?php the_title() ?>
         </h4>
         <span class="menu-item__price">
-          <?php echo '$' . get_field('price'); ?>
+          <?php  ?>
           <i class="fa fa-plus-square js-plus-hook" aria-hidden="true"></i>
           <i class="fa fa-minus-square js-minus-hook inactive" aria-hidden="true"></i>
         </span>
@@ -445,7 +445,7 @@ $porkDinner = new WP_Query(array(
           <?php the_title() ?>
         </h4>
         <span class="menu-item__price">
-          <?php echo '$' . get_field('price'); ?>
+          <?php  ?>
           <i class="fa fa-plus-square js-plus-hook" aria-hidden="true"></i>
           <i class="fa fa-minus-square js-minus-hook inactive" aria-hidden="true"></i>
         </span>

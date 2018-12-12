@@ -98,6 +98,17 @@ eval("__webpack_require__.r(__webpack_exports__);\nlet dinnerMenuTitle = documen
 
 /***/ }),
 
+/***/ "./app/public/wp-content/themes/hibachichinese/js/modules/header.js":
+/*!**************************************************************************!*\
+  !*** ./app/public/wp-content/themes/hibachichinese/js/modules/header.js ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("let headerMenu = document.querySelector(\".header-menu\");\r\nlet menuButton = document.querySelector(\".mobile-menu\");\r\nlet closeButton = document.querySelector(\".close-menu\");\r\n\r\nmenuButton.addEventListener(\"click\", function() {\r\n  headerMenu.classList.toggle(\"js-header-slide-down\");\r\n  // menuButton.classList.add(\"inactive\");\r\n});\r\n\r\n// closeButton.addEventListener(\"click\", function() {\r\n//   header.classList.remove(\"js-header-slide-down\");\r\n//   // menuButton.classList.remove(\"inactive\");\r\n// });\r\n\n\n//# sourceURL=webpack:///./app/public/wp-content/themes/hibachichinese/js/modules/header.js?");
+
+/***/ }),
+
 /***/ "./app/public/wp-content/themes/hibachichinese/js/modules/lunchMenu.js":
 /*!*****************************************************************************!*\
   !*** ./app/public/wp-content/themes/hibachichinese/js/modules/lunchMenu.js ***!
@@ -118,7 +129,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nlet headerArrays = document.q
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_lunchMenu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/lunchMenu */ \"./app/public/wp-content/themes/hibachichinese/js/modules/lunchMenu.js\");\n/* harmony import */ var _modules_dinnerMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/dinnerMenu */ \"./app/public/wp-content/themes/hibachichinese/js/modules/dinnerMenu.js\");\n\n\n\n\n\nObject(_modules_lunchMenu__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\nObject(_modules_dinnerMenu__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n\n//# sourceURL=webpack:///./app/public/wp-content/themes/hibachichinese/js/scripts.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_lunchMenu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/lunchMenu */ \"./app/public/wp-content/themes/hibachichinese/js/modules/lunchMenu.js\");\n/* harmony import */ var _modules_dinnerMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/dinnerMenu */ \"./app/public/wp-content/themes/hibachichinese/js/modules/dinnerMenu.js\");\n/* harmony import */ var _modules_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/header */ \"./app/public/wp-content/themes/hibachichinese/js/modules/header.js\");\n/* harmony import */ var _modules_header__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_header__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n\n\nObject(_modules_lunchMenu__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\nObject(_modules_dinnerMenu__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n_modules_header__WEBPACK_IMPORTED_MODULE_2___default()();\n\n\n//# sourceURL=webpack:///./app/public/wp-content/themes/hibachichinese/js/scripts.js?");
 
 /***/ })
 
