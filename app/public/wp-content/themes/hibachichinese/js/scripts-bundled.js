@@ -105,7 +105,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nlet dinnerMenuTitle = documen
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("let headerMenu = document.querySelector(\".header-menu\");\r\nlet menuButton = document.querySelector(\".mobile-menu\");\r\nlet closeButton = document.querySelector(\".close-menu\");\r\n\r\nmenuButton.addEventListener(\"click\", function() {\r\n  headerMenu.classList.toggle(\"js-header-slide-down\");\r\n  // menuButton.classList.add(\"inactive\");\r\n});\r\n\r\n// closeButton.addEventListener(\"click\", function() {\r\n//   header.classList.remove(\"js-header-slide-down\");\r\n//   // menuButton.classList.remove(\"inactive\");\r\n// });\r\n\n\n//# sourceURL=webpack:///./app/public/wp-content/themes/hibachichinese/js/modules/header.js?");
+eval("let popDownMenu = document.querySelector(\".pop-down-menu\");\r\nlet menuButton = document.querySelector(\".mobile-menu\");\r\nlet closeButton = document.querySelector(\".close-menu\");\r\n\r\nmenuButton.addEventListener(\"click\", function() {\r\n  popDownMenu.classList.toggle(\"js-pop-down-menu--slide-down\");\r\n  // menuButton.classList.add(\"inactive\");\r\n});\r\n\r\n// closeButton.addEventListener(\"click\", function() {\r\n//   header.classList.remove(\"js-header-slide-down\");\r\n//   // menuButton.classList.remove(\"inactive\");\r\n// });\r\n\n\n//# sourceURL=webpack:///./app/public/wp-content/themes/hibachichinese/js/modules/header.js?");
 
 /***/ }),
 

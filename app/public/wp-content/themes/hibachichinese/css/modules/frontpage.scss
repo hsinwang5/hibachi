@@ -50,6 +50,7 @@
   border-radius: 5px;
   text-align: center;
   background: #960909;
+  box-shadow: #450606 2px 4px;
 }
 .order-options {
   height: auto;
@@ -65,6 +66,7 @@
 .button--jumbo {
   border-radius: 1px;
   background: url("https://i.imgur.com/tMFMo3t.jpg");
+  box-shadow: #3d3939 2px 4px;
 }
 .featured-dish {
   width: 100%;
@@ -225,7 +227,7 @@
 
 @include laptop-cutoff() {
   .hero-menu {
-    height: 750px;
+    height: 650px;
     // margin-top: 30px;
     font-size: 1.4rem;
   }
@@ -259,6 +261,8 @@
     height: 70px;
     line-height: 70px;
     margin-top: 30px;
+    width: 65%;
+    border-radius: 3px;
   }
   .featured-dish {
     width: 50%;
@@ -305,6 +309,7 @@
 
 @include highdef-cutoff() {
   .hero-menu {
+    height: 760px;
     font-size: 2rem;
   }
   .order-options {

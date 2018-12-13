@@ -1,5 +1,6 @@
 .dinner-menu {
   font-family: "Rubik", sans-serif;
+  cursor: pointer;
 }
 
 .dinner-menu--margin {
@@ -63,7 +64,14 @@
 }
 
 @include laptop-cutoff() {
+  .main-intro {
+    margin-top: 90px;
+  }
   .dinner-menu__title {
     font-size: 2.5rem;
+  }
+  .dinner-menu {
+    width: 95%;
+    margin: auto;
   }
 }
