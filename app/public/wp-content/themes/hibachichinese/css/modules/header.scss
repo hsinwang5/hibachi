@@ -71,6 +71,9 @@
 }
 
 @include mobile-cutoff() {
+  .header-container__name {
+    margin-left: 5%;
+  }
   .header-container__logo {
     width: 140px;
   }
@@ -94,10 +97,13 @@
     line-height: 75px;
     width: 90%;
     border-radius: 10px;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+  .header-container__logo {
+    width: 200px;
   }
   .header-container img {
-    flex: 0 1 auto;
-    margin-top: -34px;
+    width: 100%;
+    margin-top: -33px;
   }
 }

@@ -401,6 +401,8 @@ template {
     line-height: 60px; } }
 
 @media only screen and (min-width: 48rem) {
+  .header-container__name {
+    margin-left: 5%; }
   .header-container__logo {
     width: 140px; }
   .header-container img {
@@ -420,10 +422,12 @@ template {
     line-height: 75px;
     width: 90%;
     border-radius: 10px;
-    justify-content: space-between; }
+    justify-content: flex-start; }
+  .header-container__logo {
+    width: 200px; }
   .header-container img {
-    flex: 0 1 auto;
-    margin-top: -34px; } }
+    width: 100%;
+    margin-top: -33px; } }
 
 .hero-menu {
   width: 100%;
