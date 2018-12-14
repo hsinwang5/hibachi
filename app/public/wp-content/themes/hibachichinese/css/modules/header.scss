@@ -11,6 +11,7 @@
   z-index: 100;
   color: black;
   background: #cfc4c4;
+  display: none;
 }
 .header-container__link {
   display: none;
@@ -69,8 +70,58 @@
 .close-menu {
   color: black;
 }
+///////////////////////////////////////////////////////////////////////////////////////
+
+.radial-menu {
+  border-radius: 100px;
+  width: 100px;
+  height: 92px;
+  position: fixed;
+  top: 5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 100;
+  opacity: 0.95;
+  transform: translateY(-150px);
+  transition: transform 0.3s ease-in 0.2s;
+}
+.radial-menu img {
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.radial-menu__link {
+  border-radius: 15px;
+  width: 130px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+  background: rgba(255, 128, 0, 0.9);
+  z-index: -1;
+  transition: transform 0.3s ease-out;
+}
+.radial-menu__link--1 {
+  position: absolute;
+  top: 30%;
+  left: 85%;
+  transform: translateX(-65%) scaleX(0.6);
+}
+.radial-menu__link--2 {
+  position: absolute;
+  top: 30%;
+  left: -118%;
+  transform: translateX(66%) scaleX(0.6);
+  // display: none;
+}
+
+///legacy laptop code
+
 .header-container__logo {
-  // flex: 0 1 auto;
   width: 115px;
 }
 .header-container img {
@@ -86,11 +137,12 @@
   margin-left: 2%;
 }
 
-.js-header-slide-down {
-  transform: none;
-}
+///
 
 @include mobile-cutoff() {
+  .radial-menu {
+    transform: translateY(-150px) scale(1.45);
+  }
   .mobile-menu,
   .close-menu {
     font-size: 3rem;
@@ -111,13 +163,9 @@
   .pop-down-menu__container {
     top: 60px;
   }
-
   .pop-down-menu {
     top: 60px;
   }
-}
-
-@include mobile-cutoff() {
   .header-container__name {
     margin-left: 5%;
   }
@@ -135,6 +183,7 @@
     display: none;
   }
   .header-container {
+    display: flex;
     margin: auto;
     margin-top: 10px;
     left: 0;
@@ -153,8 +202,9 @@
     width: 200px;
   }
   .header-container img {
-    width: 100%;
-    margin-top: -33px;
+    width: 50%;
+    margin-top: -7.5px;
+    margin-left: 25%;
   }
   .header-container__name {
     font-size: 1.6rem;
@@ -183,6 +233,24 @@
     width: 225px;
   }
   .header-container img {
-    width: 100%;
+    width: 45%;
+    margin-top: -10px;
+    margin-left: 30%;
+  }
+}
+
+.js-header-slide-down {
+  transform: translateY(0);
+  transition: transform 0.3s ease-out;
+}
+.js-links-slide {
+  transform: translateX(0) scale(1);
+  transition: transform 0.3s ease-out 0.3s;
+}
+
+@include mobile-cutoff() {
+  .js-header-slide-down {
+    transform: translateY(30px) scale(1.45);
+    transition: transform 0.3s ease-out;
   }
 }

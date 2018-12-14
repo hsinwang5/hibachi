@@ -7,20 +7,18 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <?php wp_head(); ?>
 </head>
-TEST
 
 <body <?php body_class(); //gives information about the page being viewed ?>>
   <div class="header-container">
     <a href="<?php echo site_url(); ?>">
-      <div class="header-container__logo"><img src="<?php echo get_theme_file_uri('images/HibachiRound.png') ?>"
-          alt="Hibachi Logo"></div>
+      <img src="<?php echo get_theme_file_uri('images/HibachiRound.png') ?>"
+        alt="Hibachi Logo">
     </a>
-    <!-- echo '<a href="' . site_url() . '"><div class="header-container__logo"><img src="https://i.imgur.com/CMiJdij.png" alt="knife logo"></a></div>'; -->
-    <a href="<?php echo site_url("/lunch-menu"); ?>"><div class="header-container__link">Lunch
+    <a href="<?php echo site_url("/lunch-menu"); ?>"><div class="header-container__link header-container__link--1">Lunch
         Menu</div></a>
-    <a href="<?php echo site_url("/dinner-menu"); ?>"><div class="header-container__link">Dinner
+    <a href="<?php echo site_url("/dinner-menu"); ?>"><div class="header-container__link header-container__link--2">Dinner
         Menu</div></a>
-    <a href="<?php echo site_url("/location"); ?>"><div class="header-container__link">Location</div></a>
+    <a href="<?php echo site_url("/location"); ?>"><div class="header-container__link header-container__link--3">Location</div></a>
     <div class="header-container__name">3230 Medlock Bridge Rd</div>
   </div>
 
@@ -34,6 +32,17 @@ TEST
           Menu</div></a>
       <a href="<?php echo site_url("/location"); ?>"><div class="pop-down-menu__link">Location</div></a>
     </div>
+  </div>
+
+  <div class="radial-menu">
+    <a href="<?php echo site_url(); ?>">
+      <img src="<?php echo get_theme_file_uri('images/HibachiRound.png') ?>"
+        alt="Hibachi Logo">
+    </a>
+    <a href="<?php echo site_url("/lunch-menu"); ?>"><div class="radial-menu__link radial-menu__link--1">Lunch
+        Menu</div></a>
+    <a href="<?php echo site_url("/dinner-menu"); ?>"><div class="radial-menu__link radial-menu__link--2">Dinner
+        Menu</div></a>
   </div>
 </body>
 

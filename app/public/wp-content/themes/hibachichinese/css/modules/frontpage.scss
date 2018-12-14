@@ -239,9 +239,12 @@
     top: 20%;
     left: 52%;
   }
-
   .hero-menu__title img {
     transform: scale(2.25);
+  }
+  .hero-menu__title,
+  .button-container {
+    margin-top: 30px;
   }
   .mobile-image {
     display: none;
@@ -267,6 +270,9 @@
   .featured-dish {
     width: 50%;
     height: 475px;
+  }
+  .featured-dish__textbox {
+    margin-top: 25px;
   }
   .featured-dish .desktop-image {
     display: none;
@@ -311,6 +317,10 @@
   .hero-menu {
     height: 760px;
     font-size: 2rem;
+  }
+  .hero-menu__title,
+  .button-container {
+    margin-top: 40px;
   }
   .order-options {
     font-size: 2rem;
