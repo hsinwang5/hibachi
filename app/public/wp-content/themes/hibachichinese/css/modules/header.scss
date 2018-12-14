@@ -179,7 +179,8 @@
 
 @include laptop-cutoff() {
   .mobile-menu,
-  .close-menu {
+  .close-menu,
+  .radial-menu {
     display: none;
   }
   .header-container {

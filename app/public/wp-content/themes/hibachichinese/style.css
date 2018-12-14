@@ -499,7 +499,8 @@ template {
 
 @media only screen and (min-width: 80rem) {
   .mobile-menu,
-  .close-menu {
+  .close-menu,
+  .radial-menu {
     display: none; }
   .header-container {
     display: flex;
