@@ -19,7 +19,8 @@
     <a href="<?php echo site_url("/dinner-menu"); ?>"><div class="header-container__link header-container__link--2">Dinner
         Menu</div></a>
     <a href="<?php echo site_url("/location"); ?>"><div class="header-container__link header-container__link--3">Location</div></a>
-    <div class="header-container__name">3230 Medlock Bridge Rd</div>
+    <div class="header-container__name"><i class="fa fa-phone" aria-hidden="true"></i>(770)
+      263-8938</div>
   </div>
 
   <div class="mobile-menu"><i class="fa fa-bars" aria-hidden="true"></i>

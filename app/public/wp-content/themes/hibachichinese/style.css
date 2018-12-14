@@ -526,6 +526,8 @@ template {
     font-size: 1.6rem;
     flex: 1 1 content;
     padding-right: 20px; }
+  .header-container__name i {
+    margin-right: 10px; }
   .header-container__link {
     display: block;
     font-size: 1.6rem;
