@@ -7,11 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <?php wp_head(); ?>
 </head>
+TEST
 
 <body <?php body_class(); //gives information about the page being viewed ?>>
   <div class="header-container">
     <a href="<?php echo site_url(); ?>">
-      <div class="header-container__logo"><img src="<?php echo get_theme_file_uri('images/HibachiLogo.png') ?>"
+      <div class="header-container__logo"><img src="<?php echo get_theme_file_uri('images/HibachiRound.png') ?>"
           alt="Hibachi Logo"></div>
     </a>
     <!-- echo '<a href="' . site_url() . '"><div class="header-container__logo"><img src="https://i.imgur.com/CMiJdij.png" alt="knife logo"></a></div>'; -->
