@@ -502,18 +502,38 @@ template {
   .close-menu,
   .radial-menu {
     display: none; }
+  .round-logo {
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    width: 150px;
+    height: 150px;
+    z-index: 102;
+    background: rgba(0, 0, 0, 0.01);
+    transition: transform 0.5s linear; }
+  .round-logo img {
+    width: 100%; }
+  .round-logo:hover {
+    transform: rotateZ(360deg); }
   .header-container {
     display: flex;
     margin: auto;
     margin-top: 10px;
     left: 0;
     right: 0;
+    top: 2%;
     transform: none;
     height: 75px;
     line-height: 75px;
     width: 90%;
     border-radius: 10px;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    background: rgba(255, 128, 0, 0.9);
+    border-radius: 50px;
+    transition: transform 0.2s linear;
+    transform-origin: left; }
+  .header-container:hover {
+    transform: scaleX(0.03) translateX(-150px); }
   .pop-down-menu {
     display: none; }
   .header-container__logo {
