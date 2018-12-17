@@ -101,6 +101,9 @@
 }
 
 @include laptop-cutoff() {
+  .main-intro {
+    padding-top: 50px;
+  }
   .menu-item {
     font-size: 2.6rem;
     width: 60%;

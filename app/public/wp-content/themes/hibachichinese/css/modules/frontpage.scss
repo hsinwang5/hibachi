@@ -58,12 +58,20 @@
 //   transition: transform 1s linear;
 // }
 .order-options {
-  height: auto;
-  color: #e1a102;
-  border: 1px solid #ededed;
+  height: 375px;
+  color: #85837d;
+  color: #dedede;
+  position: relative;
+  overflow: hidden;
 }
-.order-options a {
-  color: #e1a102;
+.order-options-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.order-options img {
+  width: 100%;
 }
 .order-options h3 {
   margin-top: 15px;
@@ -188,6 +196,9 @@
   .order-options {
     font-size: 1.2rem;
   }
+  .order-options img {
+    margin-top: -200px;
+  }
   .featured-dish {
     height: 400px;
   }
@@ -237,7 +248,7 @@
     font-size: 1.4rem;
   }
   .hero-menu img {
-    transform: scale(1.05);
+    transform: scale(1.15);
   }
   .hero-menu__title {
     max-width: 350px;
@@ -264,17 +275,23 @@
   .order-options {
     width: 50%;
     font-size: 1.4rem;
+    height: 450px;
+  }
+  .order-options img {
+    width: 150%;
+    position: absolute;
+    margin-top: 0;
   }
   .button--jumbo {
-    height: 70px;
-    line-height: 70px;
+    height: 60px;
+    line-height: 60px;
     margin-top: 30px;
-    width: 65%;
+    width: 55%;
     border-radius: 3px;
   }
   .featured-dish {
     width: 50%;
-    height: 475px;
+    height: 450px;
   }
   .featured-dish__textbox {
     margin-top: 25px;
@@ -329,6 +346,7 @@
   }
   .order-options {
     font-size: 2rem;
+    height: 485px;
   }
   .featured-dish {
     font-size: 2rem;

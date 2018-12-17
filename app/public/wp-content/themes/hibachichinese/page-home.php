@@ -33,24 +33,30 @@
 
 <div class="home-container">
   <div class="order-options">
-    <h3>Multiple ways to order!</h3>
-    <a href="https://www.grubhub.com/restaurant/hibachi-3230-medlock-bridge-rd-ste-106-norcross/851530">
-      <div class="button button--jumbo">Order at Grubhub</div>
-    </a>
-    <a href="https://www.ubereats.com/en-US/atlanta/food-delivery/hibachi/8nF6NzC-TOCxYVGXT47mcw/">
-      <div class="button button--jumbo">Order at UberEats</div>
-    </a>
-    <a href="https://www.beyondmenu.com/29682/norcross/hibachi-chinese-and-japanese-restaurant-norcross-30092/info.aspx">
-      <div class="button button--jumbo">Order at BeyondMenu</div>
-    </a>
-    <div class="button button--jumbo">Locations</div>
+    <img class="mobile-image mobile-image__small" src="<?php echo get_field('order_options')['sizes']['heroImageMobile']; ?>"
+      alt="featured dish">
+    <img class="desktop-image" src="<?php echo get_field('order_options')['sizes']['heroImageDesktop']; ?>"
+      alt="featured dish">
+    <div class="order-options-container">
+      <h3>Order Online or In-Store</h3>
+      <a href="https://www.grubhub.com/restaurant/hibachi-3230-medlock-bridge-rd-ste-106-norcross/851530">
+        <div class="button button--jumbo">Order at Grubhub</div>
+      </a>
+      <a href="https://www.ubereats.com/en-US/atlanta/food-delivery/hibachi/8nF6NzC-TOCxYVGXT47mcw/">
+        <div class="button button--jumbo">Order at UberEats</div>
+      </a>
+      <a href="https://www.beyondmenu.com/29682/norcross/hibachi-chinese-and-japanese-restaurant-norcross-30092/info.aspx">
+        <div class="button button--jumbo">Order at BeyondMenu</div>
+      </a>
+      <div class="button button--jumbo">Locations</div>
+    </div>
   </div>
 
   <div class="featured-dish">
     <img class="mobile-image mobile-image__small" src="<?php echo get_field('hero_image_2_mobile')['sizes']['heroImageMobile']; ?>"
       alt="featured dish">
-    <img src="<?php echo get_field('hero_image_2_desktop')['sizes']['heroImageDesktop']; ?>"
-      alt="featured dish" class="desktop-image desktop-image__small">
+    <img class="desktop-image desktop-image__small" src="<?php echo get_field('hero_image_2_desktop')['sizes']['heroImageDesktop']; ?>"
+      alt="featured dish">
     <div class="featured-dish__textbox">
       <img class="featured-dish__logo" src="<?php echo get_field('hero_image_2_logo')['sizes']['wordImage']; ?>"
         alt="premium logo">
