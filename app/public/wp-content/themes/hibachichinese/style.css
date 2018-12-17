@@ -525,6 +525,8 @@ template {
     top: 30px;
     transform: none;
     width: 89%;
+    height: 70px;
+    line-height: 70px;
     border-radius: 10px;
     justify-content: flex-start;
     background: #ff8000;
@@ -560,7 +562,7 @@ template {
     transform: scaleY(0.9) scaleX(0.95); }
   .js-logo-animate {
     top: 0;
-    transform: scale(0.8) translate(7px, -20px); } }
+    transform: scale(0.8) translate(25px, -20px); } }
 
 @media only screen and (min-width: 120rem) {
   .header-container {
@@ -640,7 +642,6 @@ template {
 
 .order-options {
   height: 375px;
-  color: #85837d;
   color: #dedede;
   position: relative;
   overflow: hidden; }
@@ -709,7 +710,6 @@ template {
   opacity: 0.3; }
 
 .special-offers {
-  color: black;
   width: 100%;
   height: 300px;
   padding: 0 5px 0 5px; }
@@ -738,9 +738,7 @@ template {
   left: 0;
   padding: 10px 10px;
   z-index: 10;
-  color: #ededed;
-  color: #b9025f;
-  color: black; }
+  color: #cccccc; }
 
 .special-offers__screen {
   position: absolute;
@@ -748,8 +746,8 @@ template {
   left: 0;
   width: 100%;
   height: 100%;
-  background: white;
-  opacity: 0.15;
+  background: black;
+  opacity: 0.55;
   z-index: 1; }
 
 @media only screen and (min-width: 48rem) {
@@ -1097,7 +1095,11 @@ template {
 
 @media only screen and (min-width: 48rem) {
   .footer {
-    font-size: 1.25rem; } }
+    font-size: 1.25rem; }
+  .footer img {
+    display: block;
+    margin: auto;
+    width: 65%; } }
 
 @media only screen and (min-width: 80rem) {
   .footer {
@@ -1107,10 +1109,10 @@ template {
   .footer img {
     display: block;
     margin: auto;
-    width: 75%; } }
+    width: 45%; } }
 
 @media only screen and (min-width: 120rem) {
   .footer {
     font-size: 2rem; }
   .footer img {
-    width: 65%; } }
+    width: 45%; } }

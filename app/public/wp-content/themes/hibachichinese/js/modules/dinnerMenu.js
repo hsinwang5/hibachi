@@ -1,5 +1,11 @@
 let dinnerMenuTitle = document.querySelectorAll(".js-dinner-menu__title-hook");
 
+// for (let i = 0; i < dinnerMenuTitle.length; i++) {
+//   dinnerMenuTitle[i].parentNode.childNodes[3].classList.toggle(
+//     "js-dinner-expand-menu"
+//   );
+// }
+
 function lunchMenu() {
   for (let i = 0; i < dinnerMenuTitle.length; i++) {
     dinnerMenuTitle[i].addEventListener("click", function() {

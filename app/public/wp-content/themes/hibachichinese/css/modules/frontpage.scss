@@ -59,7 +59,6 @@
 // }
 .order-options {
   height: 375px;
-  color: #85837d;
   color: #dedede;
   position: relative;
   overflow: hidden;
@@ -132,7 +131,6 @@
   opacity: 0.3;
 }
 .special-offers {
-  color: black;
   width: 100%;
   height: 300px;
   padding: 0 5px 0 5px;
@@ -161,9 +159,7 @@
   left: 0;
   padding: 10px 10px;
   z-index: 10;
-  color: #ededed;
-  color: #b9025f;
-  color: black;
+  color: #cccccc;
 }
 .special-offers__screen {
   position: absolute;
@@ -171,8 +167,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: white;
-  opacity: 0.15;
+  background: black;
+  opacity: 0.55;
   z-index: 1;
 }
 

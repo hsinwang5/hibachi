@@ -211,6 +211,8 @@
     top: 30px;
     transform: none;
     width: 89%;
+    height: 70px;
+    line-height: 70px;
     border-radius: 10px;
     justify-content: flex-start;
     background: rgba(255, 128, 0, 1);
@@ -262,7 +264,7 @@
   }
   .js-logo-animate {
     top: 0;
-    transform: scale(0.8) translate(7px, -20px);
+    transform: scale(0.8) translate(25px, -20px);
   }
   // .js-logo-spin {
   //   transform: rotateZ(-360deg);

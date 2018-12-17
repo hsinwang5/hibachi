@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nlet dinnerMenuTitle = document.querySelectorAll(\".js-dinner-menu__title-hook\");\r\n\r\nfunction lunchMenu() {\r\n  for (let i = 0; i < dinnerMenuTitle.length; i++) {\r\n    dinnerMenuTitle[i].addEventListener(\"click\", function() {\r\n      this.parentNode.childNodes[3].classList.toggle(\"js-dinner-expand-menu\");\r\n      this.childNodes[1].classList.toggle(\"js-chevron-rotate\");\r\n      console.log(this.childNodes[1]);\r\n    });\r\n  }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (lunchMenu);\r\n\n\n//# sourceURL=webpack:///./app/public/wp-content/themes/hibachichinese/js/modules/dinnerMenu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nlet dinnerMenuTitle = document.querySelectorAll(\".js-dinner-menu__title-hook\");\r\n\r\n// for (let i = 0; i < dinnerMenuTitle.length; i++) {\r\n//   dinnerMenuTitle[i].parentNode.childNodes[3].classList.toggle(\r\n//     \"js-dinner-expand-menu\"\r\n//   );\r\n// }\r\n\r\nfunction lunchMenu() {\r\n  for (let i = 0; i < dinnerMenuTitle.length; i++) {\r\n    dinnerMenuTitle[i].addEventListener(\"click\", function() {\r\n      this.parentNode.childNodes[3].classList.toggle(\"js-dinner-expand-menu\");\r\n      this.childNodes[1].classList.toggle(\"js-chevron-rotate\");\r\n      console.log(this.childNodes[1]);\r\n    });\r\n  }\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (lunchMenu);\r\n\n\n//# sourceURL=webpack:///./app/public/wp-content/themes/hibachichinese/js/modules/dinnerMenu.js?");
 
 /***/ }),
 

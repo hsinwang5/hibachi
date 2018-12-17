@@ -41,6 +41,11 @@
   .footer {
     font-size: 1.25rem;
   }
+  .footer img {
+    display: block;
+    margin: auto;
+    width: 65%;
+  }
 }
 
 @include laptop-cutoff() {
@@ -53,7 +58,7 @@
   .footer img {
     display: block;
     margin: auto;
-    width: 75%;
+    width: 45%;
   }
 }
 
@@ -62,6 +67,6 @@
     font-size: 2rem;
   }
   .footer img {
-    width: 65%;
+    width: 45%;
   }
 }
