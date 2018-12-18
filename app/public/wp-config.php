@@ -29,8 +29,8 @@ if (file_exists(dirname(__FILE__) . '/local.php')) {
 	define('DB_HOST', 'localhost');
 } else {
 	//live db settings
-	define('DB_NAME', 'hsinchi0_hibachi2');
-	define('DB_USER', 'hsinchi0_hsin');
+	define('DB_NAME', 'hsinchi0_hibachi5');
+	define('DB_USER', 'hsinchi0_hsin5');
 	define('DB_PASSWORD', 'tether19trac9j');
 	/** MySQL hostname */
 	define('DB_HOST', 'localhost');
