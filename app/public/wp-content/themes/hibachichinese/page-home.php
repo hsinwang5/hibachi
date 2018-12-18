@@ -34,9 +34,9 @@
 <div class="home-container">
   <div class="order-options">
     <img class="mobile-image mobile-image__small" src="<?php echo get_field('order_options')['sizes']['heroImageMobile']; ?>"
-      alt="featured dish">
+      alt="featured dish image">
     <img class="desktop-image" src="<?php echo get_field('order_options')['sizes']['heroImageDesktop']; ?>"
-      alt="featured dish">
+      alt="featured dish image">
     <div class="order-options-container">
       <h3>Order Online or In-Store</h3>
       <a href="https://www.grubhub.com/restaurant/hibachi-3230-medlock-bridge-rd-ste-106-norcross/851530">
