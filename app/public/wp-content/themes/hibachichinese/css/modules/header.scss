@@ -15,51 +15,6 @@
   cursor: pointer;
   margin-right: 7px;
 }
-// .pop-down-menu__container {
-//   overflow: hidden;
-//   position: fixed;
-//   top: 50px;
-//   right: 0;
-//   width: 275px;
-//   height: 250px;
-//   z-index: 101;
-//   pointer-events: none;
-// }
-// .pop-down-menu {
-//   display: flex;
-//   flex-flow: column;
-//   justify-content: space-evenly;
-//   position: fixed;
-//   top: 50px;
-//   right: 0;
-//   width: 275px;
-//   height: 250px;
-//   z-index: 101;
-//   background: #7d0505;
-//   color: white;
-//   font-size: 2rem;
-//   transform: translateX(300px);
-//   transition: transform 0.3s ease-out;
-// }
-// .pop-down-menu:hover {
-//   background: #b3a8a8;
-// }
-// .pop-down-menu__link {
-//   text-align: center;
-//   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-//   width: 75%;
-//   margin: 20px auto;
-//   font-family: "Rubik", sans-serif;
-// }
-// .js-pop-down-menu--slide-down {
-//   transform: none;
-//   pointer-events: auto;
-// }
-// .close-menu {
-//   color: black;
-// }
-///////////////////////////////////////////////////////////////////////////////////////
-
 .radial-menu {
   border-radius: 100px;
   width: 100px;
@@ -104,10 +59,7 @@
   top: 30%;
   left: -118%;
   transform: translateX(66%) scaleX(0.6);
-  // display: none;
 }
-
-///legacy laptop code
 
 .header-container__logo {
   width: 115px;
