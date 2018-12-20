@@ -77,10 +77,8 @@ $lunchSpecials = new WP_Query(array(
   </div>
   <?php 
 } ?>
+  <div class="right-menu"></div>
+  <div class="left-menu"></div>
 </div>
-
-<p>
-
-</p>
 
 <?php get_footer(); ?>

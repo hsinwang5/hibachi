@@ -13,7 +13,7 @@
 
 .menu-item {
   // border: 2px solid #dddcde;
-  width: 90vw;
+  width: 83vw;
   margin: 15px auto;
   padding-top: 5px;
   font-size: 1.35rem;
@@ -71,11 +71,32 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-
 .menu-item__body div {
   padding: 5px 15px;
   text-align: left;
 }
+.menu-item__container {
+  height: 100%;
+}
+.right-menu {
+  position: absolute;
+  top: 225px;
+  right: 0;
+  background: url("./images/menu_right.png") -30px 0px;
+  width: 35px;
+  height: 1px;
+  z-index: -1;
+}
+.left-menu {
+  position: absolute;
+  top: 225px;
+  left: 0;
+  background: url("./images/menu_left.png");
+  width: 35px;
+  height: 1px;
+  z-index: -1;
+}
+
 //
 //Javascript Hooks
 
@@ -97,6 +118,13 @@
   }
   .js-menu-item__hover {
     transition: width 0.2s linear;
+  }
+  .right-menu {
+    width: 60px;
+    background-position: -6px 0px;
+  }
+  .left-menu {
+    width: 60px;
   }
 }
 
@@ -120,5 +148,29 @@
   }
   .js-menu-item__hover {
     transition: width 0.15s linear;
+  }
+  .right-menu {
+    width: 100px;
+    background-position: 0px 0px;
+    background-size: cover;
+  }
+  .left-menu {
+    width: 100px;
+    background-size: cover;
+  }
+}
+
+@include highdef-cutoff {
+  .right-menu {
+    width: 160px;
+    background-position: 0px 0px;
+    background-size: cover;
+  }
+  .left-menu {
+    width: 160px;
+    background-size: cover;
+  }
+  .menu-item {
+    font-size: 2.75rem;
   }
 }

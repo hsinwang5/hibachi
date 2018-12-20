@@ -21,14 +21,14 @@
   </div>
 </div>
 
-<div class="main-menu">
+<!-- <div class="main-menu">
   <div class="main-menu__lunch-specials">
 
   </div>
   <div class="main_menu__dinner-combos">
 
   </div>
-</div>
+</div> -->
 
 
 <div class="home-container">

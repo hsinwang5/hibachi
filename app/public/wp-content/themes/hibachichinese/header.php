@@ -12,16 +12,16 @@
   <a href="<?php echo site_url(); ?>">
     <div class="round-logo"><img src="<?php echo get_theme_file_uri('images/HibachiRound.png') ?>"
         alt="Hibachi Logo"></div>
-    <div class="header-container">
-      <a href="<?php echo site_url("/lunch-menu"); ?>"><div class="header-container__link header-container__link--1">Lunch
-          Menu</div></a>
-      <a href="<?php echo site_url("/dinner-menu"); ?>"><div class="header-container__link header-container__link--2">Dinner
-          Menu</div></a>
-      <a href="<?php echo site_url("/location"); ?>"><div class="header-container__link header-container__link--3">Location</div></a>
-      <div class="header-container__name"><i class="fa fa-phone" aria-hidden="true"></i>(770)
-        263-8938</div>
-    </div>
   </a>
+  <div class="header-container">
+    <a href="<?php echo site_url("/lunch-menu"); ?>"><div class="header-container__link header-container__link--1">Lunch
+        Menu</div></a>
+    <a href="<?php echo site_url("/dinner-menu"); ?>"><div class="header-container__link header-container__link--2">Dinner
+        Menu</div></a>
+    <a href="<?php echo site_url("/location"); ?>"><div class="header-container__link header-container__link--3">Location</div></a>
+    <div class="header-container__name"><i class="fa fa-phone" aria-hidden="true"></i>(770)
+      263-8938</div>
+  </div>
 
 
   <div class="mobile-menu"><i class="fa fa-bars" aria-hidden="true"></i>

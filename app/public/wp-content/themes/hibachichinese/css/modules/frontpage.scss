@@ -1,3 +1,8 @@
+$font-size-mobile: 1.5rem;
+$font-size-ipad: 1.5rem;
+$font-size-laptop: 1.8rem;
+$font-size-desktop: 2rem;
+
 .hero-menu {
   width: 100%;
   height: 540px;
@@ -7,6 +12,7 @@
   overflow: hidden;
   color: #b9025f;
   color: #cfc4c4;
+  font-size: $font-size-mobile;
 }
 .desktop-image {
   display: none;
@@ -41,27 +47,39 @@
   width: 75%;
   max-width: 350px;
   height: 50%;
+  text-align: center;
 }
 .button {
+  display: inline-block;
   width: 75%;
   height: 50px;
+  margin-top: 15px;
   line-height: 50px;
-  margin: 25px auto;
   border-radius: 5px;
   text-align: center;
   background: #960909;
   box-shadow: #450606 2px 4px;
 }
-// .button:hover {
-//   background: blue;
-//   transform: rotateY(180deg) rotateZ(180deg) rotateX(180deg);
-//   transition: transform 1s linear;
-// }
+.button--main {
+  margin-top: 25px;
+}
+.order-options:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+}
 .order-options {
   height: 375px;
   color: #dedede;
   position: relative;
   overflow: hidden;
+  text-align: center;
+  font-size: $font-size-mobile;
 }
 .order-options-container {
   position: absolute;
@@ -85,6 +103,7 @@
   overflow: hidden;
   height: 300px;
   position: relative;
+  font-size: $font-size-mobile;
 }
 .mobile-image__small {
   position: static;
@@ -134,6 +153,7 @@
   width: 100%;
   height: 300px;
   padding: 0 5px 0 5px;
+  font-size: $font-size-mobile;
 }
 .special-offers__container {
   width: 100%;
@@ -157,9 +177,10 @@
   width: 100%;
   top: 0;
   left: 0;
-  padding: 10px 10px;
+  padding: 15px 10px;
   z-index: 10;
   color: #cccccc;
+  font-size: 1.1rem;
 }
 .special-offers__screen {
   position: absolute;
@@ -176,6 +197,7 @@
   .hero-menu {
     height: 750px;
     font-size: 1.2rem;
+    font-size: $font-size-ipad;
   }
   .hero-menu__title img {
     transform: scale(2.25);
@@ -187,10 +209,10 @@
     width: 90%;
     height: 60px;
     line-height: 60px;
-    margin: 30px auto;
+    margin-top: 30px;
   }
   .order-options {
-    font-size: 1.2rem;
+    font-size: $font-size-ipad;
   }
   .order-options img {
     margin-top: -200px;
@@ -227,6 +249,7 @@
   .special-offers {
     font-size: 1.2rem;
     height: 350px;
+    font-size: $font-size-ipad;
   }
   .special-offers__container {
     width: 100%;
@@ -234,6 +257,7 @@
   }
   .special-offers__text {
     padding: 30px 10px;
+    font-size: 1.5rem;
   }
 }
 
@@ -241,7 +265,7 @@
   .hero-menu {
     height: 650px;
     // margin-top: 30px;
-    font-size: 1.4rem;
+    font-size: $font-size-laptop;
   }
   .hero-menu img {
     transform: scale(1.15);
@@ -270,12 +294,11 @@
   }
   .order-options {
     width: 50%;
-    font-size: 1.4rem;
+    font-size: $font-size-laptop;
     height: 450px;
   }
   .order-options img {
     width: 150%;
-    position: absolute;
     margin-top: 0;
   }
   .button--jumbo {
@@ -299,7 +322,7 @@
     display: block;
   }
   .special-offers {
-    font-size: 1.4rem;
+    font-size: $font-size-laptop;
     height: 400px;
   }
   .special-offers h3 {
@@ -315,6 +338,7 @@
   }
   .special-offers__text {
     padding: 80px 10px;
+    font-size: 2.3rem;
   }
   .button-container {
     top: 37%;
@@ -327,22 +351,25 @@
     width: 100%;
     height: 75px;
     line-height: 75px;
-    margin: 35px auto;
+    margin: 15px auto;
   }
 }
 
 @include highdef-cutoff() {
   .hero-menu {
     height: 760px;
-    font-size: 2rem;
+    font-size: $font-size-desktop;
   }
   .hero-menu__title,
   .button-container {
     margin-top: 40px;
   }
   .order-options {
-    font-size: 2rem;
+    font-size: $font-size-desktop;
     height: 485px;
+  }
+  .order-options h3 {
+    margin-top: 25px;
   }
   .featured-dish {
     font-size: 2rem;
@@ -356,18 +383,18 @@
     display: none;
   }
   .special-offers {
-    font-size: 1.4rem;
-    height: 500px;
+    font-size: $font-size-desktop;
+    height: 475px;
   }
   .special-offers h3 {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
   }
   .special-offers__offer {
     width: 45%;
     height: 80%;
-    font-size: 2.1rem;
   }
   .special-offers__text {
-    padding: 120px 10px;
+    padding: 100px 15px;
+    font-size: 3rem;
   }
 }
