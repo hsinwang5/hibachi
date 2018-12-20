@@ -13,7 +13,7 @@ setTimeout(function() {
     rightMenu[0].style = "height: " + footerScroll + "px;";
     leftMenu[0].style = "height: " + footerScroll + "px;";
   }
-}, 400);
+}, 350);
 
 function lunchMenu() {
   for (let i = 0; i < headerArrays.length; i++) {

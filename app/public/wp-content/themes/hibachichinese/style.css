@@ -989,7 +989,7 @@ template {
   right: 0;
   background: url("./images/menu_right.png") -30px 0px;
   width: 35px;
-  height: 1px;
+  height: 1000px;
   z-index: -1; }
 
 .left-menu {
@@ -998,7 +998,7 @@ template {
   left: 0;
   background: url("./images/menu_left.png");
   width: 35px;
-  height: 1px;
+  height: 1000px;
   z-index: -1; }
 
 .js-expand-menu {
