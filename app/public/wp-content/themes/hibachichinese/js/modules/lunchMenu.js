@@ -7,13 +7,13 @@ let leftMenu = document.querySelectorAll(".left-menu");
 let footer = document.querySelectorAll(".footer");
 let footerScroll;
 
-footerScroll = footer[0].offsetTop - 100;
 setTimeout(function() {
+  footerScroll = footer[0].offsetTop - 100;
   if (rightMenu.length) {
     rightMenu[0].style = "height: " + footerScroll + "px;";
     leftMenu[0].style = "height: " + footerScroll + "px;";
   }
-}, 1000);
+}, 400);
 
 function lunchMenu() {
   for (let i = 0; i < headerArrays.length; i++) {
