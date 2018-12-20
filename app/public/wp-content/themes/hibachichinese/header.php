@@ -27,16 +27,6 @@
   <div class="mobile-menu"><i class="fa fa-bars" aria-hidden="true"></i>
   </div>
 
-  <div class="pop-down-menu__container">
-    <div class="pop-down-menu">
-      <a href="<?php echo site_url("/lunch-menu"); ?>"><div class="pop-down-menu__link">Lunch
-          Menu</div></a>
-      <a href="<?php echo site_url("/dinner-menu"); ?>"><div class="pop-down-menu__link">Dinner
-          Menu</div></a>
-      <a href="<?php echo site_url("/location"); ?>"><div class="pop-down-menu__link">Location</div></a>
-    </div>
-  </div>
-
   <div class="radial-menu">
     <a href="<?php echo site_url(); ?>">
       <img src="<?php echo get_theme_file_uri('images/HibachiRound.png') ?>"
