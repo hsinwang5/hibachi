@@ -13,8 +13,8 @@ function hibachi_features()
 {
   add_theme_support('title-tag');
   add_theme_support('post-thumbnails');
-  add_image_size('heroImageMobile', 450, 650, true);
-  add_image_size('heroImageDesktop', 1280, 600, true);
+  add_image_size('heroImageMobile', 850, 1050, true);
+  add_image_size('heroImageDesktop', 1920, 750, true);
   add_image_size('wordImage', 250, 150, true);
   add_image_size('smallBanner', 450, 150, true);
 }

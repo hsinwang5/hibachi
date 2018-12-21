@@ -4,6 +4,10 @@
 .header-container__link {
   display: none;
 }
+/* .button--tiny {
+  If you're looking to modify this, the declaration is in frontpage.scss
+  because this file doesn't handle button code
+} */
 .mobile-menu,
 .close-menu {
   position: fixed;

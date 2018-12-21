@@ -20,7 +20,8 @@
         Menu</div></a>
     <a href="<?php echo site_url("/location"); ?>"><div class="header-container__link header-container__link--3">Location</div></a>
     <div class="header-container__name"><i class="fa fa-phone" aria-hidden="true"></i>(770)
-      263-8938</div>
+      263-8938 <a href="https://www.ubereats.com/en-US/atlanta/food-delivery/hibachi/8nF6NzC-TOCxYVGXT47mcw/"><span
+          class="button button--tiny">Order at UberEats</span></a></div>
   </div>
 
 

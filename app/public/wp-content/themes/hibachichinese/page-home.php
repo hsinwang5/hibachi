@@ -39,11 +39,11 @@
       alt="featured dish image">
     <div class="order-options-container">
       <h3>Order Online or In-Store</h3>
-      <a href="https://www.grubhub.com/restaurant/hibachi-3230-medlock-bridge-rd-ste-106-norcross/851530">
-        <div class="button button--jumbo">Order at Grubhub</div>
-      </a>
       <a href="https://www.ubereats.com/en-US/atlanta/food-delivery/hibachi/8nF6NzC-TOCxYVGXT47mcw/">
         <div class="button button--jumbo">Order at UberEats</div>
+      </a>
+      <a href="https://www.grubhub.com/restaurant/hibachi-3230-medlock-bridge-rd-ste-106-norcross/851530">
+        <div class="button button--jumbo">Order at Grubhub</div>
       </a>
       <a href="https://www.beyondmenu.com/29682/norcross/hibachi-chinese-and-japanese-restaurant-norcross-30092/info.aspx">
         <div class="button button--jumbo">Order at BeyondMenu</div>

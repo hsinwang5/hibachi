@@ -345,6 +345,10 @@ template {
 .header-container__link {
   display: none; }
 
+/* .button--tiny {
+  If you're looking to modify this, the declaration is in frontpage.scss
+  because this file doesn't handle button code
+} */
 .mobile-menu,
 .close-menu {
   position: fixed;
@@ -541,7 +545,8 @@ template {
 
 .hero-menu {
   width: 100%;
-  height: 540px;
+  height: 82.5vh;
+  max-height: 550px;
   position: relative;
   top: 0;
   left: 0;
@@ -554,10 +559,13 @@ template {
   display: none; }
 
 .mobile-image {
-  width: 102%;
   position: absolute;
   top: 0;
   left: 0; }
+
+.hero-menu img {
+  width: 100%;
+  min-width: 450px; }
 
 .hero-menu__title {
   width: 100%;
@@ -597,6 +605,15 @@ template {
 .button--main {
   margin-top: 25px; }
 
+.button--tiny {
+  width: 40%;
+  height: 20px;
+  color: white;
+  line-height: 20px;
+  margin-left: 5px;
+  margin-top: -20px;
+  font-size: 0.9rem; }
+
 .order-options:before {
   content: "";
   width: 100%;
@@ -630,7 +647,8 @@ template {
 .button--jumbo {
   border-radius: 1px;
   background: url("https://i.imgur.com/tMFMo3t.jpg");
-  box-shadow: #3d3939 2px 4px; }
+  box-shadow: #3d3939 2px 4px;
+  max-width: 650px; }
 
 .featured-dish {
   width: 100%;
@@ -640,7 +658,8 @@ template {
   font-size: 1.5rem; }
 
 .mobile-image__small {
-  position: static; }
+  position: static;
+  width: 100%; }
 
 .featured-dish__textbox {
   font-family: "Black Ops One", cursive;
@@ -681,13 +700,18 @@ template {
 
 .special-offers {
   width: 100%;
-  height: 300px;
+  height: 85vh;
+  max-height: 306px;
   padding: 0 5px 0 5px;
   font-size: 1.5rem; }
 
 .special-offers__container {
   width: 100%;
-  height: 70%; }
+  margin-top: 5vw;
+  height: 70%;
+  display: flex;
+  flex-flow: column;
+  max-height: 210px; }
 
 .special-offers h3 {
   padding-top: 15px;
@@ -695,9 +719,9 @@ template {
 
 .special-offers__offer {
   width: 80%;
-  margin: 35px auto;
+  margin: auto;
   text-align: center;
-  height: 35%;
+  flex: 1 1 auto;
   background-size: cover;
   position: relative; }
 
@@ -707,7 +731,7 @@ template {
   width: 100%;
   top: 0;
   left: 0;
-  padding: 15px 10px;
+  padding: 30px 10px;
   z-index: 10;
   color: #cccccc;
   font-size: 1.1rem; }
@@ -725,10 +749,24 @@ template {
 @media only screen and (min-width: 48rem) {
   .hero-menu {
     height: 750px;
+    max-height: 1000px;
     font-size: 1.2rem;
+    font-size: 1.5rem; }
+  .button--tiny {
+    position: absolute;
+    height: 40px;
+    max-width: 350px;
+    line-height: 40px;
+    top: 27.5px;
     font-size: 1.5rem; }
   .hero-menu__title img {
     transform: scale(2.25); }
+  .hero-menu img {
+    width: 100%; }
+  .desktop-image {
+    display: none; }
+  .mobile-image {
+    display: block; }
   .button-container {
     top: 35%; }
   .button--main {
@@ -760,22 +798,26 @@ template {
   .textbox2 {
     width: 80%; }
   .special-offers {
-    font-size: 1.2rem;
     height: 350px;
+    max-height: 500px;
     font-size: 1.5rem; }
   .special-offers__container {
     width: 100%;
-    height: 85%; }
+    height: 72.5%;
+    margin-top: 20px;
+    max-height: 1000px; }
   .special-offers__text {
-    padding: 30px 10px;
+    padding: 40px 25px;
     font-size: 1.5rem; } }
 
 @media only screen and (min-width: 80rem) {
   .hero-menu {
-    height: 650px;
+    height: 525px;
     font-size: 1.8rem; }
+  .button--tiny {
+    display: none; }
   .hero-menu img {
-    transform: scale(1.15); }
+    width: 100%; }
   .hero-menu__title {
     max-width: 350px;
     top: 20%;
@@ -788,8 +830,7 @@ template {
   .mobile-image {
     display: none; }
   .desktop-image {
-    display: block;
-    width: 100%; }
+    display: block; }
   .home-container {
     display: flex; }
   .order-options {
@@ -808,6 +849,8 @@ template {
   .featured-dish {
     width: 50%;
     height: 450px; }
+  .featured-dish img {
+    width: 100%; }
   .featured-dish__textbox {
     margin-top: 25px; }
   .featured-dish .desktop-image {
@@ -816,17 +859,19 @@ template {
     display: block; }
   .special-offers {
     font-size: 1.8rem;
-    height: 400px; }
+    height: 350px; }
   .special-offers h3 {
     font-size: 1.8rem; }
   .special-offers__container {
-    display: flex; }
+    flex-flow: row;
+    margin-top: 20px;
+    max-height: 2000px; }
   .special-offers__offer {
-    width: 45%;
-    height: 80%;
+    flex: 1 1 auto;
+    height: 85%;
     font-size: 2rem; }
   .special-offers__text {
-    padding: 80px 10px;
+    padding: 60px 10px;
     font-size: 2.3rem; }
   .button-container {
     top: 37%;
@@ -842,7 +887,7 @@ template {
 
 @media only screen and (min-width: 120rem) {
   .hero-menu {
-    height: 760px;
+    height: 650px;
     font-size: 2rem; }
   .hero-menu__title,
   .button-container {
@@ -862,14 +907,18 @@ template {
     display: none; }
   .special-offers {
     font-size: 2rem;
-    height: 475px; }
+    height: 425px;
+    display: block; }
+  .special-offers__container {
+    margin-top: 15px; }
   .special-offers h3 {
     font-size: 2.5rem; }
   .special-offers__offer {
-    width: 45%;
-    height: 80%; }
+    flex: 1 1 auto;
+    height: 100%;
+    padding-top: 0; }
   .special-offers__text {
-    padding: 100px 15px;
+    padding: 90px 15px;
     font-size: 3rem; } }
 
 .main-intro {
