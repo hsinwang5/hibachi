@@ -25,7 +25,7 @@ $font-size-desktop: 2rem;
   top: 0;
   left: 0;
 }
-.hero-menu img {
+.hero-menu + img {
   width: 100%;
   min-width: 450px;
 }
@@ -43,39 +43,37 @@ $font-size-desktop: 2rem;
   width: 100%;
   transform: scale(1.5);
 }
-.button-container {
-  position: absolute;
-  top: 45%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 75%;
-  max-width: 350px;
-  height: 50%;
-  text-align: center;
+.display-header {
+  height: 10px;
+  width: 100%;
+  background: black;
 }
-.button {
-  display: inline-block;
-  width: 75%;
-  height: 50px;
-  margin-top: 15px;
-  line-height: 50px;
-  border-radius: 5px;
-  text-align: center;
-  background: #960909;
-  box-shadow: #450606 2px 4px;
+.display {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  // touch-action: pan-y pinch-zoom;
+  // pointer-events: none;
 }
-.button--main {
-  margin-top: 25px;
+.display::-webkit-scrollbar {
+  display: none;
 }
-.button--tiny {
-  width: 40%;
-  height: 20px;
-  color: white;
-  line-height: 20px;
-  margin-left: 5px;
-  margin-top: -20px;
-  font-size: 0.9rem;
+.display-item {
+  max-width: 500px;
+  max-height: 465px;
+  width: 75vw;
+  height: 70vw;
+}
+.display-item img {
+  max-width: 500px;
+  max-height: 465px;
+  width: 75vw;
+  height: 70vw;
+}
+.display-footer {
+  height: 10px;
+  width: 100%;
+  background: black;
 }
 .order-options:before {
   content: "";
@@ -167,8 +165,8 @@ $font-size-desktop: 2rem;
 }
 .special-offers {
   width: 100%;
-  height: 85vh;
-  max-height: 306px;
+  height: 90vh;
+  max-height: 300px;
   padding: 0 5px 0 5px;
   font-size: $font-size-mobile;
 }
@@ -213,10 +211,44 @@ $font-size-desktop: 2rem;
   opacity: 0.55;
   z-index: 1;
 }
+.button-container {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 75%;
+  max-width: 350px;
+  height: 50%;
+  text-align: center;
+}
+.button {
+  display: inline-block;
+  width: 75%;
+  height: 50px;
+  margin-top: 15px;
+  line-height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  background: #960909;
+  box-shadow: #450606 2px 4px;
+}
+.button--main {
+  margin-top: 25px;
+}
+.button--tiny {
+  width: 40%;
+  height: 20px;
+  color: white;
+  line-height: 20px;
+  margin-left: 5px;
+  margin-top: -20px;
+  font-size: 0.9rem;
+}
 
 @include mobile-cutoff() {
   .hero-menu {
-    height: 750px;
+    height: 650px;
     max-height: 1000px;
     font-size: 1.2rem;
     font-size: $font-size-ipad;
@@ -227,6 +259,7 @@ $font-size-desktop: 2rem;
     max-width: 350px;
     line-height: 40px;
     top: 27.5px;
+    margin-left: 10px;
     font-size: $font-size-ipad;
   }
   .hero-menu__title img {
@@ -248,10 +281,19 @@ $font-size-desktop: 2rem;
     width: 90%;
     height: 60px;
     line-height: 60px;
-    margin-top: 30px;
+    margin-top: 40px;
+  }
+  .button--jumbo {
+    max-width: 450px;
   }
   .order-options {
     font-size: $font-size-ipad;
+  }
+  .order-options-container {
+    width: 70%;
+    margin: auto;
+    left: 0;
+    right: 0;
   }
   .order-options img {
     margin-top: -200px;
@@ -312,7 +354,7 @@ $font-size-desktop: 2rem;
   }
   .hero-menu__title {
     max-width: 350px;
-    top: 20%;
+    top: 18%;
     left: 52%;
   }
   .hero-menu__title img {
@@ -320,7 +362,7 @@ $font-size-desktop: 2rem;
   }
   .hero-menu__title,
   .button-container {
-    margin-top: 30px;
+    margin-top: 37.5px;
   }
   .mobile-image {
     display: none;
@@ -396,13 +438,13 @@ $font-size-desktop: 2rem;
     width: 100%;
     height: 75px;
     line-height: 75px;
-    margin: 15px auto;
+    margin: 20px auto;
   }
 }
 
 @include highdef-cutoff() {
   .hero-menu {
-    height: 650px;
+    height: 675px;
     font-size: $font-size-desktop;
   }
   .hero-menu__title,
@@ -447,5 +489,8 @@ $font-size-desktop: 2rem;
   .special-offers__text {
     padding: 90px 15px;
     font-size: 3rem;
+  }
+  .button--jumbo {
+    max-width: 650px;
   }
 }

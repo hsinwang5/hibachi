@@ -20,6 +20,7 @@ function lunchMenu() {
     headerArrays[i].addEventListener("click", function() {
       toggleMenuDetails(this, i);
       setImageHeight();
+      console.log("click");
     });
   }
   window.addEventListener("resize", function() {

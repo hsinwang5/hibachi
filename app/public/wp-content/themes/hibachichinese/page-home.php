@@ -21,15 +21,20 @@
   </div>
 </div>
 
-<!-- <div class="main-menu">
-  <div class="main-menu__lunch-specials">
-
+<div class="display-container">
+  <div class="display-header"></div>
+  <div class="display">
+    <?php for ($i = 1; $i < 8; $i++) { ?>
+    <?php if (get_field('display' . $i)['sizes']['heroImageMobile']) { ?>
+    <div class="display-item"><img src=" <?php echo get_field('display' . $i)['sizes']['heroImageMobile']; ?>"
+        alt="scrolling food items"></div>
+    <?php 
+  } ?>
+    <?php 
+  } ?>
   </div>
-  <div class="main_menu__dinner-combos">
-
-  </div>
-</div> -->
-
+  <div class="display-footer"></div>
+</div>
 
 <div class="home-container">
   <div class="order-options">
@@ -68,7 +73,7 @@
 </div>
 
 <div class="special-offers">
-  <h3>Daily Offers (Pickup orders only)</h3>
+  <h3>Daily Offers (Pickup only)</h3>
   <div class="special-offers__container">
     <div class="special-offers__offer" style="background-image: url(<?php echo get_field('special_offer_1_image')['sizes']['smallBanner']; ?>);">
       <div class="special-offers__screen"></div>
