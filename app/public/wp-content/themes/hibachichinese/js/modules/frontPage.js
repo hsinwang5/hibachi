@@ -1,13 +1,16 @@
 let display = document.querySelector(".display");
 let displayItem = document.querySelectorAll(".display-item");
 
+let scrollSpeed = window.innerWidth > 1920 ? 2 : 1;
+console.log(scrollSpeed);
+
 if (display) {
   requestAnimationFrame(scroller);
   insertClone();
   setInterval(insertClone, 15000);
 
   function scroller() {
-    display.scrollBy(1.6, 0);
+    display.scrollBy(scrollSpeed, 0);
     requestAnimationFrame(scroller);
   }
 
