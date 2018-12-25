@@ -1,7 +1,7 @@
 let display = document.querySelector(".display");
 let displayItem = document.querySelectorAll(".display-item");
 
-let scrollSpeed = window.innerWidth > 1920 ? 2 : 1;
+let scrollSpeed = window.innerWidth > 1920 ? 1 : 1;
 
 if (display) {
   requestAnimationFrame(scroller);

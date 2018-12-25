@@ -105,7 +105,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nlet dinnerMenuTitle = documen
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("let display = document.querySelector(\".display\");\r\nlet displayItem = document.querySelectorAll(\".display-item\");\r\n\r\nlet scrollSpeed = window.innerWidth > 1920 ? 2 : 1;\r\n\r\nif (display) {\r\n  requestAnimationFrame(scroller);\r\n  insertClone();\r\n  setInterval(insertClone, 15000);\r\n\r\n  function scroller() {\r\n    display.scrollBy(scrollSpeed, 0);\r\n    requestAnimationFrame(scroller);\r\n  }\r\n\r\n  function insertClone() {\r\n    for (let i = 0; i < displayItem.length; i++) {\r\n      display.appendChild(displayItem[i].cloneNode(true));\r\n    }\r\n  }\r\n}\r\n\n\n//# sourceURL=webpack:///./app/public/wp-content/themes/hibachichinese/js/modules/frontPage.js?");
+eval("let display = document.querySelector(\".display\");\r\nlet displayItem = document.querySelectorAll(\".display-item\");\r\n\r\nlet scrollSpeed = window.innerWidth > 1920 ? 1 : 1;\r\n\r\nif (display) {\r\n  requestAnimationFrame(scroller);\r\n  insertClone();\r\n  setInterval(insertClone, 15000);\r\n\r\n  function scroller() {\r\n    display.scrollBy(scrollSpeed, 0);\r\n    requestAnimationFrame(scroller);\r\n  }\r\n\r\n  function insertClone() {\r\n    for (let i = 0; i < displayItem.length; i++) {\r\n      display.appendChild(displayItem[i].cloneNode(true));\r\n    }\r\n  }\r\n}\r\n\n\n//# sourceURL=webpack:///./app/public/wp-content/themes/hibachichinese/js/modules/frontPage.js?");
 
 /***/ }),
 
