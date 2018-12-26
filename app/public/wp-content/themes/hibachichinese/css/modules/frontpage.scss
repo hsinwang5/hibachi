@@ -59,8 +59,8 @@ $font-size-desktop: 2rem;
   display: none;
 }
 .display-item {
-  max-width: 500.1px;
-  max-height: 465.1px;
+  max-width: 500px;
+  max-height: 465px;
   width: 75vw;
   height: 70vw;
 }
@@ -371,6 +371,14 @@ $font-size-desktop: 2rem;
     display: block;
     // width: 100%;
   }
+  .display-item {
+    max-width: 475px;
+    max-height: 442px;
+  }
+  .display-item img {
+    max-width: 475px;
+    max-height: 442px;
+  }
   .home-container {
     display: flex;
   }
@@ -444,12 +452,20 @@ $font-size-desktop: 2rem;
 
 @include highdef-cutoff() {
   .hero-menu {
-    height: 675px;
+    height: 700px;
     font-size: $font-size-desktop;
   }
   .hero-menu__title,
   .button-container {
     margin-top: 40px;
+  }
+  .display-item {
+    max-width: 500px;
+    max-height: 465px;
+  }
+  .display-item img {
+    max-width: 500px;
+    max-height: 465px;
   }
   .order-options {
     font-size: $font-size-desktop;

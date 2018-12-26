@@ -594,8 +594,8 @@ template {
   display: none; }
 
 .display-item {
-  max-width: 500.1px;
-  max-height: 465.1px;
+  max-width: 500px;
+  max-height: 465px;
   width: 75vw;
   height: 70vw; }
 
@@ -869,6 +869,12 @@ template {
     display: none; }
   .desktop-image {
     display: block; }
+  .display-item {
+    max-width: 475px;
+    max-height: 442px; }
+  .display-item img {
+    max-width: 475px;
+    max-height: 442px; }
   .home-container {
     display: flex; }
   .order-options {
@@ -925,11 +931,17 @@ template {
 
 @media only screen and (min-width: 120rem) {
   .hero-menu {
-    height: 675px;
+    height: 700px;
     font-size: 2rem; }
   .hero-menu__title,
   .button-container {
     margin-top: 40px; }
+  .display-item {
+    max-width: 500px;
+    max-height: 465px; }
+  .display-item img {
+    max-width: 500px;
+    max-height: 465px; }
   .order-options {
     font-size: 2rem;
     height: 485px; }

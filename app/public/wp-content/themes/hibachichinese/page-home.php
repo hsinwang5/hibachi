@@ -53,7 +53,9 @@
       <a href="https://www.beyondmenu.com/29682/norcross/hibachi-chinese-and-japanese-restaurant-norcross-30092/info.aspx">
         <div class="button button--jumbo">Order at BeyondMenu</div>
       </a>
-      <div class="button button--jumbo">Locations</div>
+      <a href="https://www.beyondmenu.com/29682/norcross/hibachi-chinese-and-japanese-restaurant-norcross-30092/info.aspx">
+        <div class="button button--jumbo">Locations</div>
+      </a>
     </div>
   </div>
 
