@@ -5,6 +5,7 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="google-site-verification" content="0RaCILHnjEfxSahevymHMLYc8zCKyPLT4Yn65lP0mN4" />
   <?php wp_head(); ?>
 </head>
 
