@@ -2,6 +2,7 @@
 <html <?php language_attributes(); ?>>
 
 <head>
+  <title>Hibachi Chinese & Japanese Restaurant</title>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,7 +20,9 @@
         Menu</div></a>
     <a href="<?php echo site_url("/dinner-menu"); ?>"><div class="header-container__link header-container__link--2">Dinner
         Menu</div></a>
-    <a href="<?php echo site_url("/location"); ?>"><div class="header-container__link header-container__link--3">Location</div></a>
+    <a href="https://www.beyondmenu.com/29682/norcross/hibachi-chinese-and-japanese-restaurant-norcross-30092/info.aspx">
+      <div class="header-container__link header-container__link--3">Location</div>
+    </a>
     <div class="header-container__name"><i class="fa fa-phone" aria-hidden="true"></i>(770)
       263-8938 <a href="https://www.ubereats.com/en-US/atlanta/food-delivery/hibachi/8nF6NzC-TOCxYVGXT47mcw/"><span
           class="button button--tiny">Order at UberEats</span></a></div>
