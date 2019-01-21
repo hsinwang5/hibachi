@@ -1,7 +1,8 @@
 <div class="footer" style="background-image: url(<?php echo get_theme_file_uri('images/footer4.jpg') ?>)">
   <div class="footer__links">
     <ul>
-      <li><a href="">Delivery Area and Options</a></li>
+      <li><a href="https://www.ubereats.com/en-US/atlanta/food-delivery/hibachi/8nF6NzC-TOCxYVGXT47mcw/">Delivery
+          Area and Options</a></li>
       <li><a href="">Site Map</a></li>
     </ul>
   </div>
